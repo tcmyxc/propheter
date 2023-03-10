@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-python3 pure_cls_train.py \
+python3 train_baseline.py \
     --model_name resnet32 \
     --data_name cifar-10-lt-ir100 \
     --lr 0.01 \
