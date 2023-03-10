@@ -10,7 +10,6 @@ def get_current_time():
 
 
 def print_time(time_elapsed, epoch=False):
-    """打印程序执行时长"""
     time_hour = time_elapsed // 3600
     time_minite = (time_elapsed % 3600) // 60
     time_second = time_elapsed % 60

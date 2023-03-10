@@ -11,7 +11,6 @@ def _img_loader(path, mode='RGB'):
 
 
 def _find_classes(root):
-    # eval 是将cifar数据集目录中的类别字符串转为数字
     classes = [eval(d.name) for d in os.scandir(root) if d.is_dir()]
     classes.sort()
     classes_indices = {classes[i]: i for i in range(len(classes))}
@@ -55,13 +54,7 @@ class ImageDataset(Dataset):
         if self.transform is not None:
             image = self.transform(image)
 
-        # return image, target, name
         return image, target
 
     def __len__(self):
         return len(self.samples)
-
-
-if __name__ == '__main__':
-    dataset = ImageDataset(image_dir="/nfs/xwx/dataset/cifar100_lt_ir100/images/test")
-    print(dataset[10])

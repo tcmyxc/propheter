@@ -97,6 +97,8 @@ if __name__ == '__main__':
                     train=True, download=True, imb_factor=imb_factor
                 )
             print("train dataset size:", len(trainset))
+            # np.save(f"cifar-10-lt-ir100.npy", trainset.get_cls_num_list())
+            # break
             trainloader = iter(trainset)
             root_dir = f"{root}/{dataset_name}{int(1/imb_factor)}/images/train"
             print(root_dir)

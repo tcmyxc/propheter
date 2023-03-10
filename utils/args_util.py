@@ -1,5 +1,4 @@
 def print_args(args):
-    """优雅地打印命令行参数"""
     
     print("")
     print("-" * 20, "args", "-" * 20)
