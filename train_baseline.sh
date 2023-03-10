@@ -8,5 +8,5 @@ python3 pure_cls_train.py \
     --epochs 200 \
     --loss_type bsl \
     --gpu_id 0 \
-    > baseline_log/$(date "+%Y%m%d-%H%M%S").log
+    > logs/base/$(date "+%Y%m%d-%H%M%S").log
 wait
