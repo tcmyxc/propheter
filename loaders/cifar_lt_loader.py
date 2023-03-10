@@ -3,7 +3,6 @@ import os
 from torch.utils.data import DataLoader
 from torchvision import transforms
 
-from configs import config
 from loaders.auto_aug import CIFAR10Policy, Cutout
 from loaders.datasets.image_dataset import ImageDataset
 
