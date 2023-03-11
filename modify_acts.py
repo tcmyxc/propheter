@@ -98,7 +98,7 @@ def main(args):
         print(f"\nEpoch {epoch+1}")
         print(f"lr is: {cur_lr}\n")
 
-        if epoch % 7 == 0:
+        if epoch % args.cycle == 0:
             print("[INFO] add noise\n")
             add_noise = True
         else:
@@ -148,6 +148,7 @@ def get_args_parser(add_help=True):
     parser.add_argument('--best_model_path', action='store_const', const=None)
     parser.add_argument('--print_report', action='store_true')
     parser.add_argument('--print_freq', type=int, default=10)
+    parser.add_argument('--cycle', type=int, default=7)
 
     return parser
     
