@@ -102,7 +102,7 @@ if __name__ == '__main__':
             trainloader = iter(trainset)
             root_dir = f"{root}/{dataset_name}{int(1/imb_factor)}/images/train"
             print(root_dir)
-            for i, (data, label) in enumerate(tqdm(trainloader)):
+            for i, (data, label) in enumerate(tqdm(trainloader, total=len(trainset))):
                 img_path = root_dir + "/" + str(label)
                 if not os.path.exists(img_path):
                     os.makedirs(img_path)
@@ -119,7 +119,7 @@ if __name__ == '__main__':
             testloader = iter(testset)
             root_dir = f"{root}/{dataset_name}{int(1/imb_factor)}/images/test"
             print(root_dir)
-            for i, (data, label) in enumerate(tqdm(testloader)):
+            for i, (data, label) in enumerate(tqdm(testloader, total=len(testset))):
                 img_path = root_dir + "/" + str(label)
                 if not os.path.exists(img_path):
                     os.makedirs(img_path)
