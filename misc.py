@@ -165,10 +165,19 @@ def get_loss_fn(args, cfg, device):
 def get_scheduler(lr_scheduler, optimizer, epochs):
 
     if lr_scheduler == "cosine":
+        # for cifar
         scheduler = optim.lr_scheduler.CosineAnnealingLR(
             optimizer=optimizer,
             T_max=epochs
         )
+    elif lr_scheduler == "steplr":
+        # for imagenet-lt
+        main_lr_scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=30)
+        warmup_lr_scheduler = optim.lr_scheduler.LinearLR(optimizer, start_factor=0.01, total_iters=5)
+        scheduler = optim.lr_scheduler.SequentialLR(optimizer, schedulers=[warmup_lr_scheduler, main_lr_scheduler], milestones=[5])
+    elif lr_scheduler == "placeslr":
+        # for places-lt
+        scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
 
 
     return scheduler
