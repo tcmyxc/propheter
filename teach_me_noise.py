@@ -159,7 +159,6 @@ def get_args_parser(add_help=True):
     parser.add_argument('--fl_gamma', type=float, default=2.0)
     parser.add_argument('--gpu_id', type=str, default='2')
     parser.add_argument('--result_path', type=str, default='./work_dir')
-    parser.add_argument('--threshold', type=float, default='0.5')
     parser.add_argument('--cfg', type=str, default='one_stage.yml')
     parser.add_argument('--teacher_model_path', type=str)
     parser.add_argument('--best_model_path', action='store_const', const=None)
