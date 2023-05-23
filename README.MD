@@ -56,3 +56,15 @@ Replace the value of the variable `cifar_10_lt_ir100_bsl_teacher_model_path` in 
 bash two_stage.sh
 ```
 
+## 6.Parameter Settings
+
+We utilize the SGD optimizer with a momentum of 0.9 and a weight decay of 5e-4, 
+with a batch size of 128 and a cosine learning rate schedule for the CIFAR10/CIFAR100-LT datasets. 
+The initial learning rate is set to 0.01. We employ AutoAugment and Cutout as the data augmentation strategies 
+for classification when using CE Loss, Focal Loss, and Balanced Softmax Loss. 
+
+For the ImageNet-LT dataset, we train residual networks with a batch size of 64, a learning rate of 0.025, 
+an SGD optimizer with momentum 0.9, and weight decay 1e-4. 
+
+For the Places-LT dataset, we use batch size 64, cosine learning rate schedule decaying from 0.005 to 0. 
+
