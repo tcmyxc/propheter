@@ -8,7 +8,7 @@ python3 modify_acts.py \
     --lr_scheduler cosine \
     --loss_type bsl \
     --epochs 200 \
-    --gpu_id 1 \
+    --gpu_id 0 \
     > $(date "+%Y%m%d-%H%M%S").log
   
 wait
