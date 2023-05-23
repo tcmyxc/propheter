@@ -9,7 +9,7 @@ python3 modify_acts.py \
     --loss_type bsl \
     --epochs 200 \
     --gpu_id 1 \
-    > logs/one_stage/$(date "+%Y%m%d-%H%M%S").log
+    > $(date "+%Y%m%d-%H%M%S").log
   
 wait
 
