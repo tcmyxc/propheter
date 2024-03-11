@@ -1,3 +1,12 @@
+Propheter: Prophetic Teacher Guided Long-Tailed Distribution Learning
+========
+
+![conference](https://img.shields.io/badge/Conference-ICONIP_2023-ff69b4)
+&emsp;![code](https://img.shields.io/badge/Code-Official-brightgreen)
+&emsp;![doc](https://img.shields.io/badge/Docs-Latest-orange)
+
+> Paper Link: [[arXiv]](https://arxiv.org/abs/2304.04135)
+
 # Operation Manual
 
 > We only provide the results reproduction process of the `cifar-10-lt-ir100` dataset on the `ResNet32` model.
