@@ -83,10 +83,10 @@ If you find the paper useful in your research, please consider citing:
 
 ```bibtex
 @inproceedings{xu2023propheter,
-title={Propheter: Prophetic Teacher Guided Long-Tailed Distribution Learning},
-author={Xu, Wenxiang and Jing, Yongcheng and Zhou, Linyun and Huang, Wenqi and Cheng, Lechao and Feng, Zunlei and Song, Mingli},
-booktitle={ICONIP},
-year={2023},
+  title={Propheter: Prophetic Teacher Guided Long-Tailed Distribution Learning},
+  author={Xu, Wenxiang and Jing, Yongcheng and Zhou, Linyun and Huang, Wenqi and Cheng, Lechao and Feng, Zunlei and Song, Mingli},
+  booktitle={ICONIP},
+  year={2023},
 }
 ```
 
