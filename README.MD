@@ -77,3 +77,16 @@ an SGD optimizer with momentum 0.9, and weight decay 1e-4.
 
 For the Places-LT dataset, we use batch size 64, cosine learning rate schedule decaying from 0.005 to 0. 
 
+# Citation
+
+If you find the paper useful in your research, please consider citing:
+
+```bibtex
+@inproceedings{xu2023propheter,
+title={Propheter: Prophetic Teacher Guided Long-Tailed Distribution Learning},
+author={Xu, Wenxiang and Jing, Yongcheng and Zhou, Linyun and Huang, Wenqi and Cheng, Lechao and Feng, Zunlei and Song, Mingli},
+booktitle={ICONIP},
+year={2023},
+}
+```
+
